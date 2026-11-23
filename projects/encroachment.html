@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operational and Safety Impact of Encroachments in Heterogeneous Traffic | Lubaba Tabassum</title>
+<meta name="description" content="A computer vision and microsimulation framework that measures how curbside encroachments in Dhaka reduce flow and speed and increase the probability of critical Time-to-Collision events.">
+<meta name="author" content="Lubaba Tabassum">
+<meta property="og:title" content="Operational and Safety Impact of Encroachments in Heterogeneous Traffic | Lubaba Tabassum">
+<meta property="og:description" content="A computer vision and microsimulation framework that measures how curbside encroachments in Dhaka reduce flow and speed and increase the probability of critical Time-to-Collision events.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<aside class="sidebar">
+  <a href="../index.html"><img class="photo" src="../images/profile.jpg" alt="Portrait of Lubaba Tabassum"></a>
+  <h1 class="name"><a href="../index.html">Lubaba Tabassum</a></h1>
+  <hr>
+  <p class="tagline">Transportation Engineer<br>Traffic Microsimulation &middot; Road Safety<br>Computer Vision for Traffic<br>Intelligent Transportation Systems (ITS)<br>AI and Machine Learning<br>Travel Behaviour &amp; Human Behaviour</p>
+  <nav><a href="../index.html"><span>Home</span></a><a href="../cv.html"><span>CV</span></a><a href="../projects.html" class=active><span>Projects</span></a><a href="../publications.html"><span>Publications</span></a></nav>
+  <div class="social">
+    <a href="https://github.com/luba-sum" title="GitHub" aria-label="GitHub"><svg aria-hidden="true" class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg></a>
+    <a href="https://www.linkedin.com/in/lubaba-tabassum-782265396/" title="LinkedIn" aria-label="LinkedIn"><svg aria-hidden="true" class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"/></svg></a>
+    <a href="https://orcid.org/0009-0009-9137-5118" title="ORCID" aria-label="ORCID"><svg aria-hidden="true" class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M294.7 188.2l-45.9 0 0 153.8 47.5 0c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496zM175.2 368.8l-29.8 0 0-207.5 29.8 0 0 207.5zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2zM300 369l-81 0 0-207.7 80.6 0c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z"/></svg></a>
+    <a href="mailto:lubaba@iut-dhaka.edu" title="Email" aria-label="Email"><svg aria-hidden="true" class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg></a>
+  </div>
+</aside>
+<main><div class="content">
+<a class="back" href="../projects.html"><svg aria-hidden="true" class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 105.4-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> All projects</a><p class="kicker">Research project</p><h1>Operational and Safety Impact of Encroachments in Heterogeneous Traffic</h1><p class="muted small" style="margin-bottom:26px">June 2024 &ndash; October 2025 &middot; Undergraduate thesis</p><table class="meta"><tr><th>Type</th><td>Undergraduate thesis research</td></tr><tr><th>Lab</th><td>Moinul Hossain, Ph.D. Lab, Islamic University of Technology</td></tr><tr><th>Supervisors</th><td>Prof. Moinul Hossain (IUT); Dr. Md. Asif Raihan (ARI, BUET)</td></tr><tr><th>Collaborator</th><td>Prof. Mohammed Quddus, Imperial College London</td></tr><tr><th>Methods</th><td>RF-DETR, ByteTrack, Kalman filter, bird&rsquo;s-eye-view transformation, SUMO, TraCI, Time-to-Collision</td></tr><tr><th>Outputs</th><td>TRB 2026 paper (accepted and presented); journal paper in preparation for <i>Accident Analysis &amp; Prevention</i></td></tr></table>
+<h2>Overview</h2>
+<p>Encroachment is the unauthorised occupation of public road space by on-street parking, waiting rickshaws and easy bikes, street vendors and loading activity. In Dhaka it is part of everyday traffic, and its effect is amplified by heterogeneous, weak lane-discipline traffic. The link between encroachment and congestion is widely acknowledged, but quantitative, micro-level evidence on its operational and safety effects has been scarce, particularly in mixed traffic.</p>
+<p>This project developed a data-driven framework that combines computer vision on roadside video with calibrated microscopic simulation. It measures traffic as it actually operates with encroachments, then reproduces the same corridors without them in SUMO, so that the difference in flow, speed and conflict risk can be attributed to encroachment.</p>
+
+<h2>Objectives</h2>
+<ol>
+<li>To identify and quantify the impacts of the types of encroachment commonly observed on urban roadways, with emphasis on traffic safety and operational efficiency.</li>
+<li>To evaluate the potential safety and operational improvements from removing these encroachments.</li>
+</ol>
+
+<h2>Study Area and Data</h2>
+<p>Video was recorded at four locations in Dhaka and Gazipur with different land-use and traffic characteristics: Mirpur (two corridors, C1 and C2), Uttara, Banani and Board Bazar, giving 4.08 hours of footage in total. The vehicle classes observed included bicycles, rickshaws, motorcycles, CNG auto-rickshaws, easy bikes, private cars, microbuses, pickup trucks, human haulers, covered vans, buses and trucks.</p>
+<p>Fixed roadside landmarks such as lamp posts and electric poles were surveyed with a measuring tape to provide ground control for converting pixel coordinates to real-world coordinates. Surveyors also recorded the spot speeds of 87 vehicles, chosen by stratified random sampling across vehicle types, to validate and calibrate the video-based speeds. The detection model was fine-tuned on 145 annotated frames taken from the study videos.</p>
+<figure><a href="../images/encroachment/study-area.jpg"><img src="../images/encroachment/study-area.jpg" alt="Study locations in the Dhaka and Gazipur districts, with model-inferred frames from Board Bazar, Uttara, Mirpur and Banani." loading="lazy"></a><figcaption><b>Figure 1.</b> Study locations in the Dhaka and Gazipur districts, with model-inferred frames from Board Bazar, Uttara, Mirpur and Banani.</figcaption></figure>
+
+<h2>Methodology</h2>
+<figure class="narrow"><a href="../images/encroachment/workflow.png"><img src="../images/encroachment/workflow.png" alt="Workflow: (a) data collection, (b) real-world analysis from video, (c) simulation of encroachment-free conditions and (d) comparative analysis." loading="lazy"></a><figcaption><b>Figure 2.</b> Workflow: (a) data collection, (b) real-world analysis from video, (c) simulation of encroachment-free conditions and (d) comparative analysis.</figcaption></figure>
+<h3>Computer vision pipeline</h3>
+<ul>
+<li><b>Detection and tracking.</b> A fine-tuned RF-DETR (Roboflow Detection Transformer) model detects vehicles frame by frame, and ByteTrack keeps a persistent identity for each vehicle. A transformer detector was chosen over faster CNN-based models because it handles the partially occluded and visually ambiguous objects common in dense mixed traffic.</li>
+<li><b>Perspective transformation.</b> Four ground control points convert image coordinates to metres, so trajectories are analysed in a bird&rsquo;s-eye view.</li>
+<li><b>Motion estimation.</b> A constant-velocity Kalman filter estimates each vehicle&rsquo;s position and velocity, with a 5.0 m/s&sup2; acceleration constraint and exponential smoothing to keep trajectories physically realistic and to predict future positions.</li>
+<li><b>Speed calibration.</b> Raw video speeds underestimated low speeds and overestimated high ones. A piecewise linear model with an automatically selected breakpoint at 6.13 m/s was fitted on 80% of the ground-truth sample and validated on the remaining 20%. Calibration reduced the RMSE from 0.935 m/s to 0.504 m/s (1.81 km/h) and raised R&sup2; from 0.602 to 0.884, within the [&minus;3, +2] km/h tolerance used by enforcement authorities in several countries.</li>
+<li><b>Event detection.</b> An object is classed as an encroachment when it stays in a curbside zone for at least 30 seconds while moving less than 1 m. Time-to-Collision is computed from the Kalman state vectors of leader and follower vehicles using the time of closest approach, and each candidate event passes a five-stage filter (hysteresis, persistence, confidence, angle validation and collision geometry) to remove false positives.</li>
+</ul>
+<figure><a href="../images/encroachment/detection.jpg"><img src="../images/encroachment/detection.jpg" alt="Detection, tracking and calibrated per-vehicle speeds on a Dhaka corridor." loading="lazy"></a><figcaption><b>Figure 3.</b> Detection, tracking and calibrated per-vehicle speeds on a Dhaka corridor.</figcaption></figure>
+<figure class="narrow"><a href="../images/encroachment/zones.jpg"><img src="../images/encroachment/zones.jpg" alt="Encroachment detection by curbside zone: green indicates no encroachment and red indicates a detected encroachment." loading="lazy"></a><figcaption><b>Figure 4.</b> Encroachment detection by curbside zone: green indicates no encroachment and red indicates a detected encroachment.</figcaption></figure>
+<figure class="narrow"><a href="../images/encroachment/speed-calibration.png"><img src="../images/encroachment/speed-calibration.png" alt="Speed calibration: (a) piecewise model developed on training data and (b) validation on unseen data." loading="lazy"></a><figcaption><b>Figure 5.</b> Speed calibration: (a) piecewise model developed on training data and (b) validation on unseen data.</figcaption></figure>
+
+<h3>Microscopic simulation of encroachment-free conditions</h3>
+<p>Each corridor was rebuilt in SUMO (Simulation of Urban MObility) with Traffic Analysis Zones assigned to network edges and demand taken from the video-derived volumes and vehicle mix. The model was configured to represent Bangladeshi mixed traffic rather than default lane-based behaviour:</p>
+<ul>
+<li>Twelve vehicle types, including non-motorised rickshaws, rickshaw vans and bicycles alongside buses, CNGs, cars, motorcycles and trucks.</li>
+<li>Sub-lane movement with a lateral resolution of 0.8 m to represent weak lane discipline.</li>
+<li>Opportunistic lane changing (lcImpatience 0.1&ndash;0.5, lcPushy 0.1&ndash;0.8, lcSpeedGain 0.5&ndash;1.5) and vehicle-specific minimum gaps (0.8 m for rickshaws, 2.0 m for cars, 3.0 m for buses and trucks).</li>
+<li>Field-based maximum speeds (for example rickshaw 17 km/h, motorcycle 35 km/h, private car 40 km/h), accelerations of 0.8&ndash;2.5 m/s&sup2;, decelerations of 2.0&ndash;4.5 m/s&sup2;, and driver-imperfection values (&sigma;) from 0.5 for cars to 0.8 for rickshaws.</li>
+<li>A 0.1 s step length, with floating car data, trip information and lane-change outputs extracted through TraCI.</li>
+</ul>
+<figure class="narrow"><a href="../images/encroachment/sumo-taz.png"><img src="../images/encroachment/sumo-taz.png" alt="SUMO network for the Uttara study corridor showing Traffic Analysis Zones and the 30 m study segment." loading="lazy"></a><figcaption><b>Figure 6.</b> SUMO network for the Uttara study corridor showing Traffic Analysis Zones and the 30 m study segment.</figcaption></figure>
+
+<h3>Comparative measures</h3>
+<p>Real-world (video) and ideal (simulated) conditions were compared on vehicle flow in 5-minute intervals, space mean speed (harmonic mean over the study segment) and the probability of critical TTC events, defined as interactions with TTC &lt; 1.0 s among all interactions of interest (TTC &le; 5 s).</p>
+
+<h2>Results</h2>
+<h3>Detection performance</h3>
+<p>The fine-tuned RF-DETR model reached an mAP@0.50 of 57.5%, an mAP@0.50:0.95 of 35.6% and an mAR@0.50:0.95 of 56.7%, with training stopped early after 82 epochs once validation loss stabilised. This is sufficient for the application, since the analysis depends on trajectories rather than pixel-accurate boxes.</p>
+<figure class="narrow"><a href="../images/encroachment/model-metrics.png"><img src="../images/encroachment/model-metrics.png" alt="Training curves: average precision, average recall and training/validation loss." loading="lazy"></a><figcaption><b>Figure 7.</b> Training curves: average precision, average recall and training/validation loss.</figcaption></figure>
+
+<h3>Extent and character of encroachment</h3>
+<p>463 encroachment incidents were identified. Encroachments were present for 2.87 of the 4.08 recorded hours, an average coverage of 70.3%. Using the 95th-percentile dwelling time (249 s) as the threshold, 94.8% of incidents were temporary, but the 5.2% that were permanent accounted for 25.3% of total dwelling time. Easy bikes (25.9% of incidents) and rickshaws (23.3%) were the most frequent encroachers. Private cars combined high frequency with long average stays (130.5 s), which points to illegal parking. Trucks were rare but had the longest average duration (160.8 s), consistent with curbside loading.</p>
+<div class="tblwrap"><table class="tbl"><thead><tr><th>Location</th><th class=n>Encroached time / recorded time (s)</th><th class=n>Coverage</th></tr></thead><tbody><tr><td>Uttara</td><td class=n>2,132 / 3,802</td><td class=n>56.1%</td></tr><tr><td>Mirpur C1</td><td class=n>2,731 / 2,761</td><td class=n>98.9%</td></tr><tr><td>Mirpur C2</td><td class=n>1,676 / 1,838</td><td class=n>91.2%</td></tr><tr><td>Board Bazar</td><td class=n>3,335 / 3,564</td><td class=n>93.6%</td></tr><tr><td>Banani</td><td class=n>453 / 2,733</td><td class=n>16.6%</td></tr><tr><td><b>All locations</b></td><td class=n><b>10,329 / 14,700</b></td><td class=n><b>70.3%</b></td></tr></tbody></table></div><p class="tblcap">Table 1. Encroachment coverage by location.</p>
+<figure class="narrow"><a href="../images/encroachment/coverage.png"><img src="../images/encroachment/coverage.png" alt="Encroachment coverage and the split of dwelling time between temporary and permanent encroachment, by location." loading="lazy"></a><figcaption><b>Figure 8.</b> Encroachment coverage and the split of dwelling time between temporary and permanent encroachment, by location.</figcaption></figure>
+<figure class="narrow"><a href="../images/encroachment/frequency-duration.png"><img src="../images/encroachment/frequency-duration.png" alt="Frequency against average duration of encroachment incidents by vehicle type." loading="lazy"></a><figcaption><b>Figure 9.</b> Frequency against average duration of encroachment incidents by vehicle type.</figcaption></figure>
+
+<h3>Operational and safety impact</h3>
+<p>Across locations the probability of a critical TTC event rose from about 3% in encroachment-free conditions to 21% with encroachment. Flow fell by 61% on average (between 18% and 85% across corridors), and space mean speed fell by about 34%. At Mirpur C1, simulated flow of 670 veh/h dropped to 132 veh/h in one interval, and at Banani the ideal space mean speed of 37.3 km/h was nearly halved.</p>
+<div class="tblwrap"><table class="tbl"><thead><tr><th>Location</th><th class=n>Space mean speed, incoming (km/h): real</th><th class=n>ideal</th><th class=n>Critical TTC probability: real</th><th class=n>ideal</th></tr></thead><tbody><tr><td>Banani</td><td class=n>18.72</td><td class=n>37.33</td><td class=n>0.08 (214/2,751)</td><td class=n>0.04 (22/575)</td></tr><tr><td>Board Bazar</td><td class=n>23.13</td><td class=n>35.11</td><td class=n>0.18 (387/2,171)</td><td class=n>0.02 (28/1,139)</td></tr><tr><td>Mirpur C1</td><td class=n>16.96</td><td class=n>23.97</td><td class=n>0.37 (1,063/2,874)</td><td class=n>0.03 (11/340)</td></tr><tr><td>Mirpur C2</td><td class=n>21.99</td><td class=n>23.69</td><td class=n>0.31 (727/2,353)</td><td class=n>0.04 (16/402)</td></tr><tr><td>Uttara</td><td class=n>22.71</td><td class=n>37.60</td><td class=n>0.13 (551/4,307)</td><td class=n>0.02 (9/488)</td></tr></tbody></table></div><p class="tblcap">Table 2. Speed and safety outcomes: real-world (with encroachment) versus simulated (without encroachment).</p>
+<figure><a href="../images/encroachment/timeseries.png"><img src="../images/encroachment/timeseries.png" alt="Time series of space mean speed and flow by location, real-world against ideal conditions." loading="lazy"></a><figcaption><b>Figure 10.</b> Time series of space mean speed and flow by location, real-world against ideal conditions.</figcaption></figure>
+<figure class="narrow"><a href="../images/encroachment/critical-events.png"><img src="../images/encroachment/critical-events.png" alt="Critical TTC event probability by location and slope comparison between ideal and real-world conditions." loading="lazy"></a><figcaption><b>Figure 11.</b> Critical TTC event probability by location and slope comparison between ideal and real-world conditions.</figcaption></figure>
+
+<h2>Implications</h2>
+<ul>
+<li>Enforce parking regulations on major roads, including peak-hour bans on on-street parking and one-side parking on narrow streets.</li>
+<li>Address the mismatch between parking demand and legal supply through off-street facilities, updated parking standards and demand-based pricing.</li>
+<li>Work with informal transport operators and vendors through designated zones rather than relying on enforcement alone, since much encroachment is tied to livelihoods.</li>
+<li>Use continuous video monitoring as a low-cost alternative to manual observation for targeting enforcement.</li>
+</ul>
+
+<h2>Limitations and Future Work</h2>
+<p>Tracks are lost when a vehicle is occluded for more than about 1.5 s. A re-identification tracker such as StrongSORT could address this. Small, distant vehicles are harder to detect at the model&rsquo;s 560-pixel base resolution. Planned work includes TensorRT FP16 inference for real-time use and a larger, more diverse training set.</p>
+
+<h2>My Contribution</h2>
+<p>Equal-contribution co-lead with two co-authors: field data collection at the study sites; development of the computer vision and SUMO workflow; analysis and interpretation of results; and preparation of the TRB 2026 manuscript and the journal version in preparation.</p>
+<p class="muted small">Supervisors: Prof. Moinul Hossain (IUT) and Dr. Md. Asif Raihan (Accident Research Institute, BUET). Collaborator: Prof. Mohammed Quddus (Imperial College London).</p>
+<h2>Related Publications</h2><div class="pub"><div class="t"><a href="../publications/trb2026-encroachment.html">Analyzing Operational and Safety Impact of Encroachments Through Video Analytics for Heterogeneous Traffic</a></div><div class="a">Fahim, B.*, <b>Tabassum, L.</b>*, Doha, H. H. K.*, Raihan, M. A., Hossain, M., Quddus, M.</div><div class="v">105th Annual Meeting of the Transportation Research Board (TRB 2026), Washington, D.C.<span class="s">Accepted and presented</span></div></div><div class="pub"><div class="t"><a href="../publications/aap-encroachment.html">Analyzing Operational and Safety Impact of Encroachments Through Video Analytics for Heterogeneous Traffic</a></div><div class="a">Fahim, B., <b>Tabassum, L.</b>, Doha, H. H. K., Hossain, M., Raihan, M. A., Quddus, M.</div><div class="v">Target journal: <i>Accident Analysis &amp; Prevention</i><span class="s">In preparation</span></div></div>
+<footer>&copy; 2026 Lubaba Tabassum &middot; <a href="mailto:lubaba@iut-dhaka.edu">lubaba@iut-dhaka.edu</a></footer>
+</div></main>
+</body>
+</html>

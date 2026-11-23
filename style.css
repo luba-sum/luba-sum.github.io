@@ -1,0 +1,241 @@
+/* Lubaba Tabassum, personal academic website */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:wght@400;600&display=swap');
+
+* { box-sizing: border-box; }
+
+html { font-size: 17px; }
+
+body {
+  margin: 0;
+  font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+  line-height: 1.65;
+}
+
+a { color: #1a1a1a; text-decoration: underline; text-underline-offset: 2px; text-decoration-color: #999; }
+a:hover { text-decoration-color: #1a1a1a; }
+
+/* ---------- Sidebar ---------- */
+
+.sidebar {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: 300px;
+  background: #f4f4f4;
+  border-right: 1px solid #dcdcdc;
+  padding: 56px 32px 32px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.sidebar .photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #cfcfcf;
+}
+
+.sidebar .name {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin: 22px 0 10px;
+}
+
+.sidebar .role {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0 0 6px;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 1px solid #cfcfcf;
+  width: 60px;
+  margin: 26px auto;
+}
+
+.sidebar nav a {
+  display: block;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: #333;
+  padding: 6px 0;
+}
+
+.sidebar nav a:hover { color: #000; }
+
+.sidebar nav a.active {
+  color: #000;
+  font-weight: 600;
+}
+
+.sidebar .contact {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.sidebar .contact a { color: #333; text-decoration: none; }
+.sidebar .contact a:hover { text-decoration: underline; }
+
+/* ---------- Main ---------- */
+
+main {
+  margin-left: 300px;
+  max-width: 920px;
+  padding: 64px 72px 96px;
+}
+
+h1, h2, h3 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 600;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 0 0 28px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 48px 0 16px;
+}
+
+h3 { font-size: 1.1rem; margin: 28px 0 8px; }
+
+p { margin: 0 0 14px; }
+
+ul { padding-left: 20px; margin: 0 0 14px; }
+li { margin-bottom: 6px; }
+
+.muted { color: #666; }
+.small { font-size: 0.9rem; }
+
+/* Two-column rows (CV and positions) */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 4px;
+}
+.row .date { color: #666; white-space: nowrap; font-size: 0.92rem; }
+.entry { margin-bottom: 20px; }
+.entry ul { margin-top: 6px; }
+
+/* ---------- Collapsible items ---------- */
+
+details {
+  border-top: 1px solid #dcdcdc;
+  padding: 16px 0;
+}
+
+details:last-of-type { border-bottom: 1px solid #dcdcdc; }
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding-right: 32px;
+}
+
+details > summary::-webkit-details-marker { display: none; }
+
+details > summary::after {
+  content: '+';
+  position: absolute;
+  right: 4px; top: 0;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: #444;
+}
+
+details[open] > summary::after { content: '\2013'; }
+
+summary .title {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: block;
+  line-height: 1.4;
+}
+
+summary .meta {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+details .body { padding-top: 14px; }
+
+/* ---------- Figures ---------- */
+
+figure { margin: 22px 0; }
+figure img { width: 100%; height: auto; border: 1px solid #e2e2e2; display: block; }
+figure.pair { display: flex; gap: 12px; align-items: flex-start; }
+figure.pair > div { flex: 1; }
+figcaption { font-size: 0.85rem; color: #666; margin-top: 6px; }
+
+/* ---------- Publications ---------- */
+
+ol.pubs { padding-left: 22px; }
+ol.pubs > li { margin-bottom: 22px; padding-left: 4px; }
+.pub-status { font-style: italic; color: #555; }
+
+details.abstract {
+  border: none;
+  padding: 6px 0 0;
+}
+details.abstract > summary {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: #999;
+  text-underline-offset: 2px;
+  padding-right: 0;
+}
+details.abstract > summary::after { content: ''; }
+details.abstract .body {
+  font-size: 0.95rem;
+  color: #333;
+  border-left: 2px solid #dcdcdc;
+  padding: 8px 0 4px 16px;
+  margin-top: 8px;
+}
+
+footer {
+  margin-top: 72px;
+  padding-top: 16px;
+  border-top: 1px solid #dcdcdc;
+  font-size: 0.82rem;
+  color: #888;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 900px) {
+  html { font-size: 16px; }
+  .sidebar {
+    position: static;
+    width: auto;
+    border-right: none;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 36px 20px 24px;
+  }
+  .sidebar .photo { width: 110px; height: 110px; }
+  .sidebar hr { margin: 18px auto; }
+  .sidebar nav a { display: inline-block; padding: 4px 10px; }
+  main { margin-left: 0; padding: 36px 22px 64px; }
+  .row { flex-direction: column; gap: 0; }
+  figure.pair { flex-direction: column; }
+}
